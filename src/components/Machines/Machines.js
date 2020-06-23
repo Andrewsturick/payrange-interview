@@ -7,7 +7,7 @@ import AddIcon from '../AddIcon';
 import Footer from "../Footer";
 import Header from "../Header";
 
-const GET_MACHINES_URL = "http://localhost:3001/machines";
+const GET_MACHINES_URL = "http://andrewsturick.payrange.interview.backend.ngrok.io/machines";
 
 const getNewMachine = (id) => {
     return {
@@ -71,6 +71,7 @@ const Machines = () => {
             {
                 machines.map((machine) => (
                     <Machine
+                        key={machine.id}
                         machine={machine}
                         onDelete={handleDeleteMachine}
                     />

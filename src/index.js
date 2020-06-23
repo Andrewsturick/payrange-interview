@@ -3,19 +3,24 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './index.css';
-import App from './App';
+import Machines from "./components/Machines"
 import Login from './pages/Login/Login';
 import ProtectedRoute from "./components/ProtectedRoute";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Switch>
-        <Route path="/login" component={Login}/>
-        <ProtectedRoute path="/" redirectTo="/login" component={App}/>
-      </Switch>
-    </Router>
+    <div className="root">
+      <div className="app">
+        <Router>
+          <Switch>
+            <Route path="/login" component={Login}/>
+            <ProtectedRoute path="/" redirectTo="/login" component={Machines}/>
+          </Switch>
+        </Router>
+        </div>
+    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
