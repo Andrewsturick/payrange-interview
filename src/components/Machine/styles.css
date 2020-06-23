@@ -1,0 +1,47 @@
+.machine {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    background-color: white;
+    height: 60px;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+.machine-info {
+    width: 70%;
+    display: inline-block;
+}
+
+.machine-id {
+    position: relative;
+    margin: 10px;
+    border: 1px solid #dbdbdb;
+    width: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+h3, h4, h5{
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: inherit;
+}
+
+.machine-label {
+    color: #676767;
+}
+
+.machine-status {
+    color: #c8c8c8;
+}
